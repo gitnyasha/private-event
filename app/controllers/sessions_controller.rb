@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 class SessionsController < ApplicationController
-  def new
-  end
+  def new; end
 
   def create
     user = User.find_by(username: params[:session][:username])
@@ -10,7 +11,7 @@ class SessionsController < ApplicationController
       redirect_to user
     else
       # Create an error message.
-      render "new"
+      render 'new'
     end
   end
 end

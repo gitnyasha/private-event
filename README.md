@@ -1,6 +1,6 @@
 # private-event
 
-The porpuse of this project was to build a site similar to a private Eventbrite which allows users to create events and then manage user signups.
+The purpose of this project was to build a site similar to a private Eventbrite which allows users to create events and then manage user signups.
 ## Built With
 
 - Ruby
