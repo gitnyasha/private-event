@@ -2,12 +2,14 @@
 <p>
 <p>Created By: <%= @event.creator.username %></p>
 </p>
-<%# 
-<p>
-  <strong>Event date:</strong>
-  <%= @event.event_date %>
-<%# </p>  %>
+<% if @event.attendees.any? %>
+    <% @event.attendees.each do |attendee| %>
+        <span class="attendee">
+            <%= attendee.username %>
+        </span> <br/>
+    <% end %>
+<% else %>
+    No attendees
+<% end %><br/>
 
-<%# <%= link_to 'Edit', edit_event_path(@event) %>
-
-<%= link_to 'Back', events_path %>
+<%= link_to "Back", events_path %>
