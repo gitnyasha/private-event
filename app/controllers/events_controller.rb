@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  before_action :current_user, expect: %i[new create edit update destroy]
   before_action :set_event, only: [:show, :edit, :update, :destroy]
 
   # GET /events
@@ -16,7 +17,7 @@ class EventsController < ApplicationController
 
   # GET /events/new
   def new
-    @event = Event.all
+    @event = @event = current_user.events.build
   end
 
   # GET /events/1/edit

@@ -4,8 +4,8 @@
   <strong>Username:</strong>
   <%= @user.username %>
 </p>
-<% @events.each do |event| %>
-<ul>
-<li>user.event.title</li>
+<% if @user.events.any? %>
+<ul class="events">
+ <%= render @events %>
 </ul>
 <% end %>
