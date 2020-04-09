@@ -1,24 +1,32 @@
-# Private-Event
+# private-event
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The purpose of this project was to build a site similar to a private Eventbrite which allows users to create events and then manage user signups.
+## Built With
 
-Things you may want to cover:
+- Ruby
+- Ruby on Rails
 
-* Ruby version
+## Authors
 
-* System dependencies
+👤 **Miguel Dubois**
 
-* Configuration
+- Github: [@MiguelDP4](https://github.com/MiguelDP4)
+- Twitter: [@Mike_DP4](https://twitter.com/Mike_DP4)
+- LinkedIn [Miguel Dubois](https://www.linkedin.com/in/miguel-angel-dubois)
 
-* Database creation
+👤 **Marshall Chikari**
 
-* Database initialization
+- Github: [@gitnyasha](https://github.com/gitnyasha)
+- Twitter: [@marshallchkari](https://twitter.com/marshallchkari) 
 
-* How to run the test suite
+## 🤝 Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+This project is for learning purposes only, we wont accept contributions, though suggestions are welcome.
 
-* Deployment instructions
+## Show your support
 
-* ...
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- We thank microverse for this learning opportunity.

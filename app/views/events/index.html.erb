@@ -1,0 +1,32 @@
+
+ <%= link_to "New Event", new_event_path %>
+<p id="notice"><%= notice %></p>
+<h2>Events</h2>
+     <% if @events.upcoming.count == 0 %>
+        <p>No upcomming event yet</p>
+      <% else %>
+        <% @events.upcoming.each do |event| %>
+         <div class= "single-event">
+          <p>Title : <%= event.title %> </p>
+          <p>Date: <%= event.date %></p>
+          <%= link_to "Show", event %>
+          <p>Created by: <%= event.creator.username %> </p>
+         </div>
+         </a>
+        <% end %>
+      <% end %>
+
+     <% if @events.past.count == 0 %>
+        <p>No past event yet</p>
+      <% else %>
+        <h3> Past Event </h3>
+        
+       <% @events.past.each do |event| %>
+         <div class= "single-event">
+          <p>Title : <%= event.title %> </p>
+          <p>Date: <%= event.date %></p>
+          <%= link_to "Show", event %>
+          <p>Created by: <%= event.creator.username %> </p>
+         </div>
+        <% end %>
+    <% end %>

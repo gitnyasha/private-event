@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+<p>
+<p>Created By: <%= @event.creator.username %></p>
+</p>
+<% if @event.attendees.any? %>
+    <% @event.attendees.each do |attendee| %>
+        <span class="attendee">
+            <%= attendee.username %>
+        </span> <br/>
+    <% end %>
+<% else %>
+    No attendees
+<% end %><br/>
+
+<%= link_to "Back", events_path %>
